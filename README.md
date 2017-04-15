@@ -54,11 +54,13 @@ All other proxied API calls contain the following request headers
 
 ## UI JSON
 
+_This Section Is Work-In-Progress_
+
 When a user selects an application in Importal they are presented with a UI defined by the object received from /importalConfig. This complex object defines all the views, models, collections, and behaviors of the application. The UI is specified by what is desired. Importal will create appropriate HTML, css, and javascript methods to achieve the desired result.
 
 For instance, instead of saying "Click button X to show screen Y", the config will state "X is a list of Y, new Y can be added, existing Y and be deleted and modified". "Y is a set of A, B, and C". When modifying Y, Importal will display appropriate widgets for modifying attributes A, B, and C. This section is very much a WIP.
 
-An Importal application is essentially a UI for interacting with an API. As such, it considers an API as an event-driven state machine. A 
+An Importal application is essentially a UI for interacting with an API. As such, it considers an API as an event-driven state machine. An Importal UI configuration is a declarative definition.
 
 ### Request Object
 

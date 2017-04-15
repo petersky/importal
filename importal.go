@@ -19,6 +19,8 @@ func displayVersion() {
 
 func main() {
 	importalHome := os.Getenv("IMPORTAL_HOME")
+	webPort := os.Getenv("PORT")
+	webIP := os.Getenv("IP")
 
 	if importalHome == "" {
 		importalHome = path.Join(os.Getenv("HOME"), ".importal")
@@ -35,5 +37,5 @@ func main() {
 		os.Exit(0)
 	}
 
-	server.StartServer()
+	server.StartServer(webIP, webPort)
 }
